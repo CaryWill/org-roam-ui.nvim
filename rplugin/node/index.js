@@ -40,6 +40,7 @@ const processGraphData = (_graphdata) => {
         // TODO: file name not stored in db
         // use last path component for now
         // then fix the dev env and refactor code
+        // TODO: is it wrong, it should be [1] since lua start from index 1
         title: file_path
           .split("/")
           [file_path.split("/").length - 1].split(".")[0],
